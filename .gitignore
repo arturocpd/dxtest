@@ -1,52 +1,64 @@
-# Prerequisites
-*.d
+#sfdx project files
+.sfdx
+.sfdx/*
 
-# Object files MOD
-*.o
-*.ko
-*.obj
-*.elf
+#editor files
+.idea/*
+.idea
+IlluminatedCloud/*
+IlluminatedCloud
 
-# Linker output
-*.ilk
-*.map
-*.exp
+.vscode
+.vscode/*
+.code
 
-# Precompiled Headers
-*.gch
-*.pch
+.forceCode
+force.json
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+#If you want to exclude a main folder:
+.dontCommitMe
+folderName
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+#If you want to exclude a specific file
+myTrackedFolder/mySubFolder/myFile.untracked
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+#if you want to exclude a subfolder (including all files inside) regardless of the main folder name
+**/myUntrackedSub/**
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+#if you want to exclude files starting with a certain prefix (e.g. a namespace) in a subfolder, regardless of the main folder name
+**/myTrackedSub/myPrefix__*
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#sfdx metadata
+**/certs/**
+**/installedPackages/**
+**/connectedApps/**
+**/samlssoconfigs/**
+**/namedCredentials/**
+#**/documents/**
+**/contentassets/**
+#add further metadata below if needed
+
+
+#Managed Package Metadata
+**/classes/copado__*
+**/triggers/copado__*
+**/pages/copado__*
+**/lwc/copado__*
+**/aura/copado__*
+**/staticresources/copado__*
+
+**/classes/trailheadapp__*
+**/triggers/trailheadapp__*
+**/pages/trailheadapp__*
+**/lwc/trailheadapp__*
+**/aura/trailheadapp__*
+**/staticresources/trailheadapp__*
+
+**/classes/sf_chttr_apps__*
+**/triggers/sf_chttr_apps__*
+**/pages/sf_chttr_apps__*
+**/lwc/sf_chttr_apps__*
+**/aura/sf_chttr_apps__*
+**/staticresources/sf_chttr_apps__*
+
+#add further metadata of managed packages below
